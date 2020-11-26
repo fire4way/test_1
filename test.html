@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>System for comfort</title>
+    <meta charset="utf-8">
+    <style>
+      h1{
+        color: #6B66FF;
+        font-size: 150px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 2px solid gray;
+      }
+      h2{
+        font-size: 20px;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      h3{
+        font-size: 15px;
+        background-color: white;
+        padding: 5px;
+        color: white;
+      }
+      h4{
+        font-size: 16px;
+        margin: 0;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #grid2{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+      }
+      .ul1{
+        border-right: 2px solid gray;
+        margin: 0;
+        height: 500px;
+        padding-top: 10px;
+      }
+      .ul2{
+        padding-top: 0;
+        padding-left: 8px;
+        padding-bottom: 10px;
+      }
+      .li2{
+        padding-bottom: 10px;
+      }
+      .footer{
+        border-top: 2px solid gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">Hi</a></h1>
+      <div id="grid">
+        <div>
+          <ul class="ul1">
+            <li><h2><a href="law.html">Law</a></h2></li>
+              <ul class="ul2">
+                <li class="li2">건설기술진흥법</li>
+                <li>건설산업기본법</li>
+              </ul>
+            <li style="color: black;"><h2><a href="business">Business</a></h2></li>
+            <li><h2><a href="health">Health</a></h2></li>
+          </ul>
+        </div>
+        <div>
+          <div id="grid2">
+              <div><h3 color="red">법률</h3></div>
+              <div><h3>시행령</h3></div>
+              <div><h3>시행규칙</h3></div>
+              <div><input type="text" placeholder="Search" style="background-color: powderblue; margin-top: 15px; width: 100%; height: 22px; text-align: center;"></div>
+          </div>
+          <object type="application/pdf" data="502.pdf" width="100%" height="100%">
+            <param name="src" value="test.pdf">
+          </object>
+        </div>
+      </div>
+      <div class="footer">
+        <h4 style="text-align: center;">thx</h4>
+      </div>
+  </body>
+</html>
